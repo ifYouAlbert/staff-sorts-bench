@@ -1,0 +1,19 @@
+[project]
+name = "staff-sorts-bench"
+version = "1.0.0"
+readme = "README.md"
+authors = [
+    { name = "Albert Shturnev", email = "114603993+ifYouAlbert@users.noreply.github.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "matplotlib>=3.11.2",
+]
+
+[project.scripts]
+staff-sorts-bench = "staff_sorts_bench.main:main"
+staff-sorts-bench-charts = "staff_sorts_bench.show.plot_results:main"
+
+[build-system]
+requires = ["uv_build>=0.12.18,<0.13.0"]
+build-backend = "uv_build"
